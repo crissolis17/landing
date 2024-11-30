@@ -1,0 +1,113 @@
+        :root {
+        --ion-color-primary: #1e88e5;
+        --ion-color-secondary: #fdd835;
+        --app-background: #f4f5f8;
+        --card-border-radius: 15px;
+        --card-box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        --transition-duration: 0.3s;
+        --gradient-primary: linear-gradient(90deg, #1e88e5, #fdd835);
+        }
+
+        body {
+        margin: 0;
+        font-family: 'Arial', sans-serif;
+        background-color: var(--app-background);
+        color: #333;
+        }
+
+        .header {
+        background: var(--gradient-primary);
+        padding: 20px;
+        text-align: center;
+        color: #fff;
+        }
+
+        .header h1 {
+        font-size: 2.5em;
+        margin: 0;
+        }
+
+        .hero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 50px 20px;
+        text-align: center;
+        background: linear-gradient(135deg, #ffffff, #f4f5f8);
+        }
+
+        .hero h2 {
+        font-size: 2.5em;
+        color: var(--ion-color-primary);
+        }
+
+        .hero p {
+        font-size: 1.2em;
+        color: #555;
+        margin: 20px 0;
+        }
+
+        .cta-button {
+        background: var(--ion-color-secondary);
+        color: #000;
+        padding: 15px 30px;
+        font-size: 1.2em;
+        border: none;
+        border-radius: 25px;
+        cursor: pointer;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, background 0.3s ease;
+        }
+
+        .cta-button:hover {
+        background: #fddc49;
+        transform: translateY(-5px);
+        }
+
+        .features {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        padding: 40px 20px;
+        }
+
+        .feature-card {
+        background: #fff;
+        border-radius: var(--card-border-radius);
+        box-shadow: var(--card-box-shadow);
+        padding: 20px;
+        max-width: 300px;
+        text-align: center;
+        transition: transform var(--transition-duration);
+        }
+
+        .feature-card img {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 15px;
+        }
+
+        .feature-card:hover {
+        transform: translateY(-10px);
+        }
+
+        .feature-card h3 {
+        color: var(--ion-color-primary);
+        margin: 10px 0;
+        }
+
+        .feature-card p {
+        color: #666;
+        }
+
+        .footer {
+        text-align: center;
+        padding: 20px;
+        background: var(--ion-color-primary);
+        color: #fff;
+        }
+
+        .footer p {
+        margin: 0;
+        }
